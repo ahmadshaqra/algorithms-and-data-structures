@@ -12,3 +12,4 @@ by **Ahmad Abu-Shaqra**
 
 ## To-Do
 - [ ] Add Testing
+- [ ] Add Documentation

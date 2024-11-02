@@ -136,7 +136,7 @@ class StaticArray(Generic[E]):
 
     def __repr__(self) -> str:
         """
-            Returns a representation of the object.
+            Returns a detailed string representation of the object.
 
             Time Complexity:
                 Worst Case: O(n)
@@ -156,7 +156,7 @@ class StaticArray(Generic[E]):
     
     def __str__(self) -> str:
         """
-            Returns a representation of the object for the user.
+            Returns a simple string representation of the object.
 
             Time Complexity:
                 Worst Case: O(n)
