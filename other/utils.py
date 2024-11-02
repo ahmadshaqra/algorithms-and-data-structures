@@ -14,7 +14,7 @@ def validate_int(value: int, *, min_value: int | None = None, max_value: int | N
             Worst Case: O(1)
             Average Case: O(1)
             Best Case: O(1)
-        
+
         Space Complexity:
             Worst Case: O(1)
             Average Case: O(1)
@@ -24,17 +24,17 @@ def validate_int(value: int, *, min_value: int | None = None, max_value: int | N
             value (int): the value to be validated.
             min_value (int): the lower bound value.
             max_value (int): the upper bound value.
-        
+
         Returns:
             bool: true if integer is valid, false otherwise.
-        
+
         Raises:
             TypeError: if value, min_value, or max_value are not 'int'.
     """
-    
+
     # validates type of value
     validate_int_type(value)
-    
+
     # validates types of min_value and max_value
     if min_value is not None:
         validate_int_type(min_value)
@@ -46,7 +46,7 @@ def validate_int(value: int, *, min_value: int | None = None, max_value: int | N
         return False
     if max_value is not None and value > max_value:
         return False
-    
+
     # integer is validated
     return True
 

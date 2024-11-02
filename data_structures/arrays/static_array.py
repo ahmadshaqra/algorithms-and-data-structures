@@ -108,7 +108,7 @@ class StaticArray(Generic[E]):
         # validates index
         if self.size == 0:
             raise IndexError(f"index {index} out of range, array size is 0.")
-        if not validate_int(index, min_value=0, max_value=self.size):
+        if not validate_int(index, min_value=0, max_value=self.size-1):
             raise IndexError(f"index {index} out of range [0-{self.size-1}].")
         
         # returns element
