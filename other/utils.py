@@ -4,7 +4,6 @@
     A module of utility functions.
 
     Author: Ahmad Abu-Shaqra
-    Last Modified: 01/11/24
 """
 
 def validate_int(value: int, *, min_value: int | None = None, max_value: int | None = None) -> bool:

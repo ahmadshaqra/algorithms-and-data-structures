@@ -4,7 +4,6 @@
     A fixed-sized array with efficient index-based access.
 
     Author: Ahmad Abu-Shaqra
-    Last Modified: 01/11/24
 """
 
 from other.utils import validate_int
