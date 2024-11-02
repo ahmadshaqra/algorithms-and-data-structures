@@ -36,19 +36,15 @@ def validate_int(value: int, *, min_value: int | None = None, max_value: int | N
     # validates type of value
     validate_int_type(value)
     
-    # validates type of min_value
+    # validates types of min_value and max_value
     if min_value is not None:
         validate_int_type(min_value)
-    
-    # validates type of max_value
     if max_value is not None:
         validate_int_type(max_value)
 
-    # validates lower bound
+    # validates bounds
     if min_value is not None and value < min_value:
         return False
-    
-    # validates upper bound
     if max_value is not None and value > max_value:
         return False
     
