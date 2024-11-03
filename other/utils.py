@@ -6,6 +6,35 @@
     Author: Ahmad Abu-Shaqra
 """
 
+from typing import TypeVar
+
+T = TypeVar('T')
+
+def validate_type(value: T, expected_type: type) -> None:
+    """
+        Validates a value's type.
+
+        Time Complexity:
+            Worst Case: O(1)
+            Average Case: O(1)
+            Best Case: O(1)
+
+        Space Complexity:
+            Worst Case: O(1)
+            Average Case: O(1)
+            Best Case: O(1)
+
+        Args:
+            value (T): the value to be validated.
+            expected_type (type): the expected type of value.
+
+        Raises:
+            TypeError: if value is not the correct type.
+    """
+
+    if not isinstance(value, expected_type):
+        raise TypeError(f"expected '{expected_type.__name__}' but got '{type(value).__name__}' instead.")
+
 def validate_int(value: int, *, min_value: int | None = None, max_value: int | None = None) -> bool:
     """
         Validates an integer with optional lower and upper bounds.
@@ -33,13 +62,13 @@ def validate_int(value: int, *, min_value: int | None = None, max_value: int | N
     """
 
     # validates type of value
-    validate_int_type(value)
+    validate_type(value, int)
 
     # validates types of min_value and max_value
     if min_value is not None:
-        validate_int_type(min_value)
+        validate_type(min_value, int)
     if max_value is not None:
-        validate_int_type(max_value)
+        validate_type(max_value, int)
 
     # validates bounds
     if min_value is not None and value < min_value:
@@ -49,27 +78,3 @@ def validate_int(value: int, *, min_value: int | None = None, max_value: int | N
 
     # integer is validated
     return True
-
-def validate_int_type(value: int) -> None:
-    """
-        Validates an integer's type.
-
-        Time Complexity:
-            Worst Case: O(1)
-            Average Case: O(1)
-            Best Case: O(1)
-
-        Space Complexity:
-            Worst Case: O(1)
-            Average Case: O(1)
-            Best Case: O(1)
-
-        Args:
-            value (int): the value to be validated.
-
-        Raises:
-            TypeError: if value is not of type 'int'.
-    """
-
-    if not isinstance(value, int) or isinstance(value, bool):
-        raise TypeError(f"expected 'int' but got '{type(value).__name__}' instead.")

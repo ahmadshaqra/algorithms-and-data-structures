@@ -13,3 +13,6 @@ by **Ahmad Abu-Shaqra**
 ## To-Do
 - [ ] Add Testing
 - [ ] Add Documentation
+
+## Notes
+- Space complexity throughout the repository refers to the auxiliary space complexity (which excludes the space taken by the input).
