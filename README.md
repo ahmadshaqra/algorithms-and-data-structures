@@ -10,9 +10,9 @@ by **Ahmad Abu-Shaqra**
 - [x] Static Array
 - [x] Dynamic Array
 
-## To-Do
-- [ ] Add Testing
-- [ ] Add Documentation
+## Maintenance
+- [ ] Testing
+- [ ] Documentation
 
 ## Notes
 - Space complexity throughout the repository refers to the auxiliary space complexity (which excludes the space taken by the input).
