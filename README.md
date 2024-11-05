@@ -8,7 +8,7 @@ by **Ahmad Abu-Shaqra**
 
 ## Data Structures
 - [x] Static Array
-- [ ] Dynamic Array
+- [x] Dynamic Array
 
 ## To-Do
 - [ ] Add Testing
