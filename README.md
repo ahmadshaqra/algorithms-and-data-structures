@@ -4,7 +4,7 @@ by **Ahmad Abu-Shaqra**
 
 ## Algorithms
 - [x] Linear Search
-- [ ] Binary Search
+- [x] Binary Search
 
 ## Data Structures
 - [x] Static Array
