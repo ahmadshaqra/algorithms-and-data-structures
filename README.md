@@ -6,7 +6,7 @@ by **Ahmad Abu-Shaqra**
 - [x] Linear Search
 - [x] Binary Search
 - [x] Bubble Sort
-- [ ] Selection Sort
+- [x] Selection Sort
 - [ ] Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort

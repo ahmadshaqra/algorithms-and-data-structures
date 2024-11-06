@@ -1,7 +1,7 @@
 """
     Bubble Sort
 
-    An in-place simple sorting algorithm.
+    An in-place comparison sorting algorithm.
 
     Author: Ahmad Abu-Shaqra
 """
@@ -29,7 +29,7 @@ def bubble_sort(array: StaticArray) -> None:
             TypeError: if comparison operators are not supported between types of elements in array.
     """
 
-    # iterates through the array to bubble the largest element to the end
+    # every iteration swaps the largest element to the end
     for i in range(len(array)):
 
         # checks every pair of elements in unsorted section
