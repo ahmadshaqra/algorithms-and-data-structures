@@ -38,9 +38,3 @@ def bubble_sort(array: StaticArray) -> None:
             # swaps elements if previous element is smaller
             if array[j] > array[j+1]:
                 array[j], array[j+1] = array[j+1], array[j]
-
-array = StaticArray(2)
-array[0] = 1
-array[1] = 0
-bubble_sort(array)
-print(array)
