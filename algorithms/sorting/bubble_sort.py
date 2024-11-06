@@ -1,7 +1,7 @@
 """
     Bubble Sort
 
-    An in-place comparison sorting algorithm.
+    A sorting algorithm.
 
     Author: Ahmad Abu-Shaqra
 """

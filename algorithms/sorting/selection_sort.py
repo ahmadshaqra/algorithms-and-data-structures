@@ -1,7 +1,7 @@
 """
     Selection Sort
 
-    An in-place comparison sorting algorithm.
+    A sorting algorithm.
 
     Author: Ahmad Abu-Shaqra
 """
@@ -32,11 +32,11 @@ def selection_sort(array: StaticArray) -> None:
     # every iteration swaps the smallest element to the start
     for i in range(len(array)):
 
-        # finds the smallest element in the unsorted list
+        # finds the smallest element in the unsorted section
         min_index = i
         for j in range(i + 1, len(array)):
             if array[min_index] > array[j]:
                 min_index = j
 
-        # swaps smallest element to the end of the sorted list
+        # swaps smallest element to the end of the sorted section
         array[i], array[min_index] = array[min_index], array[i]
