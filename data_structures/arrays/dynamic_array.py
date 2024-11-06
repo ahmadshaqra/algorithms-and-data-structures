@@ -160,7 +160,7 @@ class DynamicArray(Generic[E]):
                 Best Case: O(1)
 
             Args:
-                element (E): the element to insert.
+                element (E): the element to append.
         """
 
         # checks if there is space in the array
@@ -171,13 +171,13 @@ class DynamicArray(Generic[E]):
         self.array[self.length] = element
         self.length += 1
 
-    def pop(self, index: int = -1) -> E:
+    def insert(self, index: int, element: E) -> None:
         """
-            Removes and returns an element.
+            Inserts an element at a specific index.
 
             Time Complexity:
                 Worst Case: O(n)
-                Average Case: O(1) for last element, O(n) otherwise
+                Average Case: O(n)
                 Best Case: O(1)
 
             Space Complexity:
@@ -186,7 +186,81 @@ class DynamicArray(Generic[E]):
                 Best Case: O(1)
 
             Args:
-                index (int): the index to pop the element from.
+                index (int): the index to insert the element at.
+                element (E): the element to insert.
+
+            Raises:
+                TypeError: if index is not of type 'int'.
+                IndexError: if index is out of range.
+        """
+
+        # validates index
+        validate_type(index, int)        
+        if index < 0 or index > self.length:
+            raise IndexError(f"index {index} out of range [0-{self.length}].")
+
+        # checks if there is space in the array
+        if self.length >= self.size:
+            self.grow()
+
+        # shifts elements
+        for i in range(self.length, index, -1):
+            self.array[i] = self.array[i-1]
+
+        # adds the element and increments length
+        self.array[index] = element
+        self.length += 1
+
+    def pop(self) -> E:
+        """
+            Pops and returns the last element.
+
+            Time Complexity:
+                Worst Case: O(n)
+                Average Case: O(1)
+                Best Case: O(1)
+
+            Space Complexity:
+                Worst Case: O(n)
+                Average Case: O(1)
+                Best Case: O(1)
+
+            Returns:
+                E: the last element.
+        """
+
+        # checks if array is empty
+        if self.length == 0:
+            raise IndexError("array is empty.")
+
+        # gets the last element then deletes it
+        element = self.array[self.length - 1]
+        self.array[self.length - 1] = None
+        self.length -= 1
+
+        # checks if the array can shrink
+        if self.length <= self.size // 2 and self.size != 1:
+            self.shrink()
+
+        # returns element
+        return element
+
+    def extract(self, index: int) -> E:
+        """
+            Extracts and returns an element from a specific index.
+
+            Time Complexity:
+                Worst Case: O(n)
+                Average Case: O(n)
+                Best Case: O(1)
+
+            Space Complexity:
+                Worst Case: O(n)
+                Average Case: O(1)
+                Best Case: O(1)
+
+            Args:
+                index (int): the index to extract the element from.
 
             Returns:
                 E: the element at the index.
@@ -200,24 +274,19 @@ class DynamicArray(Generic[E]):
         if self.length == 0:
             raise IndexError("array is empty.")
 
-        # sets default index
-        if index == -1:
-            index = self.length - 1
-
         # validates index
         validate_type(index, int)        
-        if not (index >= 0 and index < self.length):
+        if index < 0 or index >= self.length:
             raise IndexError(f"index {index} out of range [0-{self.length-1}].")
 
         # gets the element at the index then deletes it
         element = self.array[index]
         self.array[index] = None
 
-        # shifts elements if necessary
-        if index != self.length - 1:
-            for i in range(index, self.length - 1):
-                self.array[i] = self.array[i+1]
-            self.array[self.length - 1] = None
+        # shifts elements
+        for i in range(index, self.length - 1):
+            self.array[i] = self.array[i+1]
+        self.array[self.length - 1] = None
 
         # decrements the length of the array
         self.length -= 1
