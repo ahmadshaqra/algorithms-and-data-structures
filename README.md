@@ -7,7 +7,7 @@ by **Ahmad Abu-Shaqra**
 - [x] Binary Search
 - [x] Bubble Sort
 - [x] Selection Sort
-- [ ] Insertion Sort
+- [x] Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
 - [ ] Counting Sort
