@@ -5,7 +5,7 @@ by **Ahmad Abu-Shaqra**
 ## Algorithms
 - [x] Linear Search
 - [x] Binary Search
-- [ ] Bubble Sort
+- [x] Bubble Sort
 - [ ] Selection Sort
 - [ ] Insertion Sort
 - [ ] Merge Sort
