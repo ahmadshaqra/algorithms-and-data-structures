@@ -5,10 +5,20 @@ by **Ahmad Abu-Shaqra**
 ## Algorithms
 - [x] Linear Search
 - [x] Binary Search
+- [ ] Bubble Sort
+- [ ] Selection Sort
+- [ ] Insertion Sort
+- [ ] Merge Sort
+- [ ] Quick Sort
+- [ ] Counting Sort
+- [ ] Radix Sort
 
 ## Data Structures
 - [x] Static Array
 - [x] Dynamic Array
+- [ ] Singly Linked List
+- [ ] Doubly Linked List
+- [ ] Circular Linked List
 
 ## Maintenance
 - [ ] Testing
