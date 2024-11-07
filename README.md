@@ -8,7 +8,7 @@ by **Ahmad Abu-Shaqra**
 - [x] Bubble Sort
 - [x] Selection Sort
 - [x] Insertion Sort
-- [ ] Merge Sort
+- [x] Merge Sort
 - [ ] Quick Sort
 - [ ] Counting Sort
 - [ ] Radix Sort
