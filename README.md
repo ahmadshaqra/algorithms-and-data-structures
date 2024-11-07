@@ -9,7 +9,7 @@ by **Ahmad Abu-Shaqra**
 - [x] Selection Sort
 - [x] Insertion Sort
 - [x] Merge Sort
-- [ ] Quick Sort
+- [x] Quick Sort
 - [ ] Counting Sort
 - [ ] Radix Sort
 

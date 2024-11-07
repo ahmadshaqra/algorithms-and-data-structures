@@ -74,7 +74,7 @@ def merge(array: StaticArray, left: StaticArray, right: StaticArray) -> None:
 
     # initialises array indexes
     array_index = left_index = right_index = 0
-    
+
     # merges left and right arrays until one of them is empty
     while left_index < len(left) and right_index < len(right):
         if left[left_index] > right[right_index]:
@@ -84,7 +84,7 @@ def merge(array: StaticArray, left: StaticArray, right: StaticArray) -> None:
             array[array_index] = left[left_index]
             left_index += 1
         array_index += 1
-    
+
     # merges the remaining elements
     while left_index < len(left):
         array[array_index] = left[left_index]
