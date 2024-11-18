@@ -12,7 +12,7 @@ by **Ahmad Abu-Shaqra**
 - [x] Insertion Sort
 - [x] Merge Sort
 - [x] Quick Sort
-- [ ] Counting Sort
+- [x] Counting Sort
 - [ ] Radix Sort
 
 ## Data Structures
