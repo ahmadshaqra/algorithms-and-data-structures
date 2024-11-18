@@ -13,9 +13,9 @@ def merge_sort(array: StaticArray) -> None:
         Sorts the array.
 
         Time Complexity:
-            Worst Case: O(nlog(n))
-            Average Case: O(nlog(n))
-            Best Case: O(nlog(n))
+            Worst Case: O(n*log(n))
+            Average Case: O(n*log(n))
+            Best Case: O(n*log(n))
 
         Space Complexity:
             Worst Case: O(n)

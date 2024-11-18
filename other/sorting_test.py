@@ -15,6 +15,7 @@ from algorithms.sorting.insertion_sort import insertion_sort
 from algorithms.sorting.merge_sort import merge_sort
 from algorithms.sorting.quick_sort import quick_sort
 from algorithms.sorting.counting_sort import counting_sort
+from algorithms.sorting.radix_sort import radix_sort
 from typing import Callable
 
 def sorting_test(sorting_algorithms: list[Callable], size: int) -> None:
@@ -64,4 +65,4 @@ def sorting_test(sorting_algorithms: list[Callable], size: int) -> None:
         print(f"Time Taken: {round(end_time - start_time, 3)}s\n")
 
 if __name__ == '__main__':
-    sorting_test([counting_sort, quick_sort, merge_sort, insertion_sort, selection_sort, bubble_sort], 10000)
+    sorting_test([counting_sort, radix_sort, quick_sort, merge_sort, selection_sort, insertion_sort, bubble_sort], 10000)

@@ -13,7 +13,7 @@ by **Ahmad Abu-Shaqra**
 - [x] Merge Sort
 - [x] Quick Sort
 - [x] Counting Sort
-- [ ] Radix Sort
+- [x] Radix Sort
 
 ## Data Structures
 ### Arrays
@@ -23,10 +23,6 @@ by **Ahmad Abu-Shaqra**
 - [ ] Singly Linked List
 - [ ] Doubly Linked List
 - [ ] Circular Linked List
-
-## Maintenance
-- [ ] Testing
-- [ ] Documentation
 
 ## Notes
 - Space complexity throughout the repository refers to the auxiliary space complexity (which excludes the space taken by the input).

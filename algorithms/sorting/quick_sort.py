@@ -15,8 +15,8 @@ def quick_sort(array: StaticArray) -> None:
 
         Time Complexity:
             Worst Case: O(n^2)
-            Average Case: O(nlog(n))
-            Best Case: O(nlog(n))
+            Average Case: O(n*log(n))
+            Best Case: O(n*log(n))
 
         Space Complexity:
             Worst Case: O(n)
@@ -38,8 +38,8 @@ def quick_sort_aux(array: StaticArray, start: int, end: int) -> None:
 
         Time Complexity:
             Worst Case: O(n^2)
-            Average Case: O(nlog(n))
-            Best Case: O(nlog(n))
+            Average Case: O(n*log(n))
+            Best Case: O(n*log(n))
 
         Space Complexity:
             Worst Case: O(n)
