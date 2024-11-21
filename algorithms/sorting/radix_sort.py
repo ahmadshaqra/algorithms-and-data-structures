@@ -10,7 +10,7 @@ from data_structures.arrays.static_array import StaticArray
 
 def radix_sort(array: StaticArray) -> None:
     """
-        Sorts the array. Only works on an array of positive integers.
+        Sorts the array.
 
         Time Complexity:
             Worst Case: O(n*m)
@@ -27,6 +27,7 @@ def radix_sort(array: StaticArray) -> None:
 
         Raises:
             TypeError: if elements in array are not integers.
+            ValueError: if element in array is negative.
     """
 
     # finds the maximum number of digits
@@ -35,6 +36,12 @@ def radix_sort(array: StaticArray) -> None:
     # initialises indexed array
     indexed_array = StaticArray(len(array))
     for i in range(len(indexed_array)):
+
+        # checks if value is negative
+        if array[i] < 0:
+            raise ValueError("value must be non-negative integer.")
+
+        # sets key-value tuple
         indexed_array[i] = (0, array[i])
 
     # sorts array on each digit
